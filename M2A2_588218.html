@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>M2A2 - Registro Torneo (versión simple)</title>
+</head>
+<body>
+  <h2>Guia Visual</h2>
+
+  <form action="#" method="post" autocomplete="on">
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:600px;">
+      <tr>
+        <td>Nombre del jugador:</td>
+        <td>
+          <input type="text" id="nombre" name="nombre"
+                 required minlength="3" maxlength="15" size="35"
+                 placeholder="">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Correo:</td>
+        <td>
+          <input type="email" id="email" name="email"
+                 required size="35" placeholder="">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Edad:</td>
+        <td>
+          <input type="number" id="edad" name="edad"
+                 required min="12" max="40" placeholder="">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Nickname:</td>
+        <td>
+          <input type="text" id="nick" name="nick"
+                 required pattern="^[A-Za-z0-9]+$" title="Solo letras y números"
+                 size="35" placeholder="">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Categoría:</td>
+        <td>
+          <label><input type="radio" name="categoria" value="Principiante" required> Principiante</label>
+          <label><input type="radio" name="categoria" value="Intermedio"> Intermedio</label>
+          <label><input type="radio" name="categoria" value="Experto"> Experto</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Juegos favoritos:</td>
+        <td>
+          <label><input type="checkbox" name="juegos" value="FIFA"> FIFA</label>
+          <label><input type="checkbox" name="juegos" value="LoL"> LoL</label>
+          <label><input type="checkbox" name="juegos" value="Minecraft"> Minecraft</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Fecha inscripción:</td>
+        <td>
+          <input type="date" id="fecha" name="fecha"
+                 required min="2025-01-01" max="2025-12-31">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Restablecer">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
